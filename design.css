@@ -1,0 +1,169 @@
+/* for the entire site*/
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+h3 { 
+    font-size: 20px;
+}
+
+.button {
+    background-color: #C95578;
+    border-radius: 50px 50px 0 50px;
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+.text {
+    color: #928f8f;
+    display: block;
+    font-size: 12px;
+}
+
+.flex-section {
+    display: flex;
+}
+
+/*specific*/
+
+html {
+    background: #F8D3D8;
+    font-family: Arial;
+    padding: 40px;
+}
+
+body {
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 20px 0px 90px 0px rgba(219,143,154,0.8);
+    color: #2F2F2F;
+    margin: 0 auto;
+    max-width: 800px;
+    padding:30px;
+}
+
+header {
+    align-items: center;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#logo {
+    color: #C95578;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.category {
+    color: #C95578;
+    font-weight: 100;
+}
+
+
+.more-section {
+    padding-left: 15px;
+    position: relative;
+}
+
+.more-section:before{
+    background-color:#C95578;
+    content:"";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute; 
+    width: 4px; 
+}
+
+.more {
+    color: #2F2F2F;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.cards-box{
+    flex-wrap: wrap;
+    margin: 0; 
+    padding: 0;
+}
+
+.product-box {
+    border-radius: 30px;
+    box-shadow: 0px 0px 18px -3px rgba(0,0,0,0.19);    
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0 20px 20px 0;
+    padding: 20px;
+    width: calc(50% - 20px)
+}
+
+.text-box {
+    flex: 1 0 40%;
+    margin-right: 30px;
+}
+
+.img-box {
+    flex: 2 1 60%;
+}
+
+.img-box> img {
+     width: 100%;
+}
+
+.productText-box {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.productImg-box {
+    flex: 0 1 30%;
+}
+
+.productImg-box> img {
+     width: 100%;
+}
+
+/*helpers*/
+
+.mb-1-only {
+   margin: 0 0 10px 0; 
+}
+.mb-2 {
+    margin-bottom: 40px
+}
+
+
+@media screen and (max-width: 640px) {
+    .intro-section, .product-box {
+        flex-direction: column-reverse;
+    }
+    
+    .img-box, .productImg-box {
+        margin-bottom: 10px;
+    }
+}
+
+figcaption {
+  font-size: 12px;
+}
+
+figcaption > a {
+  color: #928f8f;
+}
+
+
